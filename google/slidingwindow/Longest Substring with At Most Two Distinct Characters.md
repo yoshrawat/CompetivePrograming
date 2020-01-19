@@ -1,7 +1,7 @@
 ```
 // "static void main" must be defined in a public class.
 // https://leetfree.com/problems/longest-substring-with-at-most-two-distinct-characters.html
-
+// Longest Substring with At Most K Distinct Characters
 public class Main {
     
     public static void main(String[] args) {
