@@ -1,15 +1,17 @@
+# Maximum sum rectangle
+
 // "static void main" must be defined in a public class.
 
-// https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/
+// [https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/](https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/)
 
-```
+```text
 public class Main {
     private static int maxSumRectangle( int arr[][] ){
         int result = 0;
         int left =0, right =0, top=0, bottom=0;
         int row = arr.length;
         int col = arr[0].length;
-        
+
         int[][] prefixSum = new int[row][col];
         for( int j = 0; j < col; j++){
             for( int i =0; i < row; i++ ){
@@ -26,7 +28,7 @@ public class Main {
         //     }
         //     System.out.println("");
         // }
-        
+
         for( int k = 0; k < col; k++ ){
             for( right =k; right < col; right++){
                 // traverse the prefixSum sum from top to bottom to get the max sum
@@ -69,3 +71,4 @@ public class Main {
     }
 }
 ```
+

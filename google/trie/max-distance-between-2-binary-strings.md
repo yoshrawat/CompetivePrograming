@@ -1,4 +1,6 @@
-```
+# Max distance between 2 binary strings
+
+```text
 // "static void main" must be defined in a public class.
 // https://leetcode.com/discuss/interview-question/350363/Google-or-OA-2018-or-Max-Distance
 public class Main {
@@ -7,7 +9,7 @@ public class Main {
         boolean isEnd;
         BinaryNode left;
         BinaryNode right;
-        
+
         public BinaryNode( char ch){
             this.ch = ch;
             left = null;
@@ -16,18 +18,18 @@ public class Main {
         }
     }
     public static int findMaxLength( List<String> list ){
-        
+
         BinaryNode root = new BinaryNode('A');
         BinaryNode temp = root;
         for( String str : list ){
             buildTrieTree( str, temp);
         }
-        
+
         printTrieTree( root );
-        
+
         temp = giveStartingNode( root );
         System.out.println("temp::"+ temp.ch);
-        
+
         int l = findMaxLenChild( temp.left);
         int r = findMaxLenChild( temp.right);
         System.out.println("l+r::"+(l+r));
@@ -97,3 +99,4 @@ The distance between 2 binary strings is the sum of their lengths after removing
 Given a list of binary strings, pick a pair that gives you maximum distance among all possible pair and return that distance.
 */
 ```
+

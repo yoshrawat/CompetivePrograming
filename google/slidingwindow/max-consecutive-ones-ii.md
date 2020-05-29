@@ -1,4 +1,6 @@
-```
+# Max Consecutive Ones II
+
+```text
 // "static void main" must be defined in a public class.
 //https://www.leetfree.com/problems/max-consecutive-ones-ii.html
 public class Main {
@@ -11,7 +13,7 @@ public class Main {
         int left = 0;
         int right = 0;
         int count = 0;
-        
+
         while( right < A.length){
             if( A[right] == 0){
                 count++;
@@ -46,5 +48,5 @@ The length of input array is a positive integer and will not exceed 10,000
 Follow up:
 What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?
 */
-
 ```
+
